@@ -1,3 +1,3 @@
-module github.com/tcecloud/tcecloud-sdk-go
+module github.com/websitefox/tcecloud-sdk-go
 
 go 1.13
