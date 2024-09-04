@@ -22,7 +22,7 @@ import (
 	"encoding/hex"
 	"sort"
 
-	tchttp "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/http"
+	tchttp "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/http"
 )
 
 const (

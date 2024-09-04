@@ -27,11 +27,11 @@ import (
         "fmt"
         "os"
 
-        "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common"
-        "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/errors"
-        "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/profile"
-        "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/regions"
-        cvm "github.com/tcecloud/tcecloud-sdk-go/tcecloud/cvm/v20170312"
+        "github.com/websitefox/tcecloud-sdk-go/tcecloud/common"
+        "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/errors"
+        "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/profile"
+        "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/regions"
+        cvm "github.com/websitefox/tcecloud-sdk-go/tcecloud/cvm/v20170312"
 
 )
 

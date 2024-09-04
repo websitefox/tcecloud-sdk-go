@@ -15,10 +15,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common"
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/errors"
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/profile"
-	location "github.com/tcecloud/tcecloud-sdk-go/tcecloud/location/v20191128"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/errors"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/profile"
+	location "github.com/websitefox/tcecloud-sdk-go/tcecloud/location/v20191128"
 	"os"
 )
 

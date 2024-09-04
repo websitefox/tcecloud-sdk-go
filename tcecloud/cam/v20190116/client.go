@@ -15,9 +15,9 @@
 package v20190116
 
 import (
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common"
-	tchttp "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/http"
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/profile"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common"
+	tchttp "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/http"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/profile"
 )
 
 const APIVersion = "2019-01-16"

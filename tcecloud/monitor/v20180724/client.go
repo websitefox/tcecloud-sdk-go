@@ -15,9 +15,9 @@
 package v20180724
 
 import (
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common"
-	tchttp "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/http"
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/profile"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common"
+	tchttp "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/http"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/profile"
 )
 
 const APIVersion = "2018-07-24"

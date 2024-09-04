@@ -20,7 +20,7 @@ import (
 	//"log"
 	"net/http"
 
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/errors"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/errors"
 )
 
 type Response interface {

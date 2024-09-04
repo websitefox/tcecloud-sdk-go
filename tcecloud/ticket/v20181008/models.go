@@ -17,7 +17,7 @@ package v20181008
 import (
 	"encoding/json"
 
-	tchttp "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/http"
+	tchttp "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/http"
 )
 
 // to suppress unused import error, although ugly

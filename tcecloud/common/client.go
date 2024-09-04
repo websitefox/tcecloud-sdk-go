@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/errors"
-	tchttp "github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/http"
-	"github.com/tcecloud/tcecloud-sdk-go/tcecloud/common/profile"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/errors"
+	tchttp "github.com/websitefox/tcecloud-sdk-go/tcecloud/common/http"
+	"github.com/websitefox/tcecloud-sdk-go/tcecloud/common/profile"
 )
 
 type Client struct {
