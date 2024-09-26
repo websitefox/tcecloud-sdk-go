@@ -2365,13 +2365,16 @@ type Placement struct {
 type InstanceConfigInfoItemArchitecture struct {
 
 	// 实例规格。
+	Type *string `json:"type,omitempty" name:"type"`
 
 	// 实例规格名称。
+	TypeName *string `json:"typeName,omitempty" name:"typeName"`
 
 	// 优先级。
+	Order *int64 `json:"order,omitempty" name:"order"`
 
 	// 实例族信息列表。
-
+	InstanceFamilies []*InstanceFamilyItemArchitecture `json:"instanceFamilies,omitempty" name:"instanceFamilies"`
 }
 
 type ExitLiveMigrateInstanceResponse struct {
@@ -5658,10 +5661,13 @@ type InstanceChargePrepaid struct {
 type InstanceFamilyItemArchitecture struct {
 
 	// 实例族。
+	InstanceFamily *string `json:"instanceFamily,omitempty" name:"instanceFamily"`
 
 	// 优先级。
+	Order int `json:"order,omitempty" name:"order"`
 
 	// 实例类型信息列表。
+	InstanceTypes []*InstanceTypeItem `json:"instanceTypes,omitempty" name:"instanceTypes"`
 
 	// 实例类型名称
 
