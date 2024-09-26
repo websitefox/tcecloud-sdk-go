@@ -243,10 +243,8 @@ type AttributeUnitInfoOutputData struct {
 type PointsObject struct {
 
 	// 监控实例的维度组合
-
-	Dimensions []*string `json:"Dimensions,omitempty" name:"Dimensions"`
+	Dimensions *Dimensions `json:"Dimensions,omitempty" name:"Dimensions"`
 	// 监控数据点数组，每个点的时间跨度为一个Period值
-
 	Points []*float64 `json:"Points,omitempty" name:"Points"`
 }
 
