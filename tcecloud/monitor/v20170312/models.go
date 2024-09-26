@@ -192,7 +192,9 @@ type AttributeInfoInput struct {
 
 	AttributeUniqueName *string `json:"AttributeUniqueName,omitempty" name:"AttributeUniqueName"`
 }
-
+type Dimensions struct {
+	UnInstanceId string `json:"unInstanceId" name:"unInstanceId"`
+}
 type GetMonitorDataRequest struct {
 	*tchttp.BaseRequest
 
@@ -213,7 +215,7 @@ type GetMonitorDataRequest struct {
 	EndTime *string `json:"EndTime,omitempty" name:"EndTime"`
 	// 实例对象的维度组合
 
-	Dimensions []*string `json:"Dimensions,omitempty" name:"Dimensions"`
+	Dimensions []*Dimensions `json:"Dimensions,omitempty" name:"Dimensions"`
 	// 统计方式
 
 	Statistics *string `json:"Statistics,omitempty" name:"Statistics"`
