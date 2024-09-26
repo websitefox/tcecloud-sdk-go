@@ -2374,7 +2374,7 @@ type InstanceConfigInfoItemArchitecture struct {
 	Order *int64 `json:"order,omitempty" name:"order"`
 
 	// 实例族信息列表。
-	InstanceFamilies []*InstanceFamilyItemArchitecture `json:"instanceFamilies,omitempty" name:"instanceFamilies"`
+	InstanceFamilies []*InstanceFamilyItemArchitecture `json:"InstanceFamilies,omitempty" name:"InstanceFamilies"`
 }
 
 type ExitLiveMigrateInstanceResponse struct {
@@ -5661,7 +5661,7 @@ type InstanceChargePrepaid struct {
 type InstanceFamilyItemArchitecture struct {
 
 	// 实例族。
-	InstanceFamily *string `json:"instanceFamily,omitempty" name:"instanceFamily"`
+	InstanceFamily *string `json:"InstanceFamily,omitempty" name:"instanceFamily"`
 
 	// 优先级。
 	Order int `json:"order,omitempty" name:"order"`
