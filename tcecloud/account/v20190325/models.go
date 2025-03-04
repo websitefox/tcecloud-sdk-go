@@ -1460,7 +1460,7 @@ type GetUserInfoResponse struct {
 		Referer *string `json:"Referer,omitempty" name:"Referer"`
 		// 是否注册成功
 
-		IsRegSucc *bool `json:"IsRegSucc,omitempty" name:"IsRegSucc"`
+		IsRegSucc *int64 `json:"IsRegSucc,omitempty" name:"IsRegSucc"`
 		// 用户属性集合
 
 		Attributes *int64 `json:"Attributes,omitempty" name:"Attributes"`
