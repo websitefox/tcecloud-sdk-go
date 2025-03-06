@@ -88,7 +88,64 @@ type QuerySwitchResponse struct {
 	Response *struct {
 		// 唯一请求 ID，每次请求都会返回。定位问题时需要提供该次请求的 RequestId。
 		RequestId *string `json:"RequestId,omitempty" name:"RequestId"`
+
+		// 开关数据信息
+		Data *SwitchData `json:"Data,omitempty" name:"Data"`
 	} `json:"Response"`
+}
+
+// SwitchData 开关数据详情
+type SwitchData struct {
+	// 条目ID
+	EntryID int64 `json:"EntryID,omitempty" name:"EntryID"`
+
+	// 开关键名
+	Key *string `json:"Key,omitempty" name:"Key"`
+
+	// 原始值（字符串形式）
+	RawValue *string `json:"RawValue,omitempty" name:"RawValue"`
+
+	// 解析后的值
+	Value []int `json:"Value,omitempty" name:"Value"`
+
+	// 命名空间
+	Namespace *string `json:"Namespace,omitempty" name:"Namespace"`
+
+	// 描述信息
+	Description *string `json:"Description,omitempty" name:"Description"`
+
+	// 版本号
+	Version int64 `json:"Version,omitempty" name:"Version"`
+
+	// 修改时间
+	ModifyTime int64 `json:"ModifyTime,omitempty" name:"ModifyTime"`
+
+	// 来源
+	Source *string `json:"Source,omitempty" name:"Source"`
+
+	// 扩展信息
+	Ext *SwitchExtInfo `json:"Ext,omitempty" name:"Ext"`
+}
+
+// SwitchExtInfo 开关扩展信息
+type SwitchExtInfo struct {
+	// 标签信息
+	Label *SwitchLabelInfo `json:"Label,omitempty" name:"Label"`
+
+	// 值类型
+	ValueType *string `json:"ValueType,omitempty" name:"ValueType"`
+
+	// 扩展版本
+	Version *string `json:"Version,omitempty" name:"Version"`
+}
+
+// SwitchLabelInfo 开关标签信息
+type SwitchLabelInfo struct {
+	// 英文标签
+	EnUS *string `json:"en-US,omitempty" name:"en-US"`
+
+	// 中文标签
+	ZhCN *string `json:"zh-CN,omitempty" name:"zh-CN"`
 }
 
 func (r *QuerySwitchResponse) ToJsonString() string {
