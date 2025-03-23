@@ -1077,7 +1077,7 @@ type DiagnosticReportDataSet struct {
 	InstanceName *string `json:"InstanceName,omitempty" name:"InstanceName"`
 	// ReportDetailSet
 
-	ReportDetailSet *ReportDetailSet `json:"ReportDetailSet,omitempty" name:"ReportDetailSet"`
+	ReportDetailSet []*ReportDetailSet `json:"ReportDetailSet,omitempty" name:"ReportDetailSet"`
 	// 检测状态
 
 	Severity *string `json:"Severity,omitempty" name:"Severity"`
